@@ -1,0 +1,21 @@
+{
+  "name": "101330993_comp3123-exec04",
+  "version": "1.0.0",
+  "description": "COMP3123 exec04 - Express.js exercise",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Warning: No tests created yet.\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

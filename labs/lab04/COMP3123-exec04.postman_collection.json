@@ -1,0 +1,184 @@
+{
+  "info": {
+    "name": "COMP3123-exec04 (Localhost 8089)",
+    "_postman_id": "82db9b84-7c3c-4afe-b732-bb71d66d6b0a",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Requests for testing the Express assignment on http://localhost:8089"
+  },
+  "item": [
+    {
+      "name": "GET /hello",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/hello",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "hello"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /user (with query)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/user?firstname=John&lastname=Doe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "user"
+          ],
+          "query": [
+            {
+              "key": "firstname",
+              "value": "John"
+            },
+            {
+              "key": "lastname",
+              "value": "Doe"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /user (defaults)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/user",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "user"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /user/:firstname/:lastname",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/user/John/Doe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "user",
+            "John",
+            "Doe"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /users (valid array)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\\n  {\"firstname\":\"Pritesh\",\"lastname\":\"Patel\"},\\n  {\"firstname\":\"John\",\"lastname\":\"Doe\"},\\n  {\"firstname\":\"John\",\"lastname\":\"Rome\"}\\n]"
+        },
+        "url": {
+          "raw": "http://localhost:8089/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /users (invalid body -> 400)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"firstname\":\"Only\",\"lastname\":\"OneObject\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8089/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /instruction.html (static)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/instruction.html",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "instruction.html"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /nope (404 example)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8089/nope",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "nope"
+          ]
+        }
+      }
+    }
+  ]
+}

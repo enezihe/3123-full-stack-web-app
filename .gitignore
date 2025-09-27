@@ -2,5 +2,7 @@
 
 !.gitignore
 !README.md
-!/labs/
+
 !/labs/**
+
+/labs/**/node_modules/
