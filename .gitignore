@@ -6,3 +6,7 @@
 !/labs/**
 
 /labs/**/node_modules/
+Assignment1/.env
+Assignment1/node_modules/
+.env
+node_modules/
