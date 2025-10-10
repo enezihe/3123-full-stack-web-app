@@ -8,3 +8,5 @@ Assignment1/.env
 Assignment1/node_modules/
 .env
 node_modules/
+Assignment1/.idea/
+Assignment1/.DS_Store
