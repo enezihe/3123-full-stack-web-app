@@ -10,3 +10,8 @@ Assignment1/node_modules/
 node_modules/
 Assignment1/.idea/
 Assignment1/.DS_Store
+
+# Allow Week06 Mongo lab
+!/labs/
+!/labs/week06-mongodb-notes-app/
+!/labs/week06-mongodb-notes-app/**
